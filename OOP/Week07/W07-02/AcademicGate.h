@@ -6,5 +6,6 @@ public:
 	AcademicGate();
 	AcademicGate(float wisdom);
 	~AcademicGate();
-	bool passGate(Player player) override;
+	bool passGate(Player* player) override;
+	string printGateInfo() override;
 };

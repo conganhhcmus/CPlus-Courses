@@ -130,7 +130,7 @@
     <ClCompile Include="AcademicGate.cpp" />
     <ClCompile Include="BusinessGate.cpp" />
     <ClCompile Include="Gate.cpp" />
-    <ClCompile Include="GateFactory.cpp" />
+    <ClCompile Include="InputGateProvider.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PowerGate.cpp" />
     <ClCompile Include="Program.cpp" />
@@ -139,9 +139,12 @@
     <ClInclude Include="AcademicGate.h" />
     <ClInclude Include="BusinessGate.h" />
     <ClInclude Include="Gate.h" />
-    <ClInclude Include="GateFactory.h" />
+    <ClInclude Include="InputGateProvider.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PowerGate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="W07-02.diagram.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

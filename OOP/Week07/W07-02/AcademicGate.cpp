@@ -14,8 +14,16 @@ AcademicGate::AcademicGate(float wisdom) : Gate() {
 AcademicGate::~AcademicGate() {
 }
 
-bool AcademicGate::passGate(Player player) {
-	float playerWisdom = player.getWisdom();
+bool AcademicGate::passGate(Player* player) {
+	float playerWisdom = player->getWisdom();
 	if (playerWisdom < wisdom) return false;
 	return true;
+}
+
+string AcademicGate::printGateInfo() {
+	stringstream ss;
+	ss << "Type: " << type
+		<< "\tGuard by: " << guardName
+		<< "\t" << Gate::printGateInfo();
+	return ss.str();
 }

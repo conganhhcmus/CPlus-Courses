@@ -10,5 +10,6 @@ public:
 	BusinessGate(float cost, int num);
 	~BusinessGate();
 
-	bool passGate(Player player) override;
+	bool passGate(Player* player) override;
+	string printGateInfo() override;
 };

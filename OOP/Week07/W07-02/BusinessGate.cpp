@@ -16,10 +16,20 @@ BusinessGate::BusinessGate(float cost, int num) : Gate() {
 BusinessGate::~BusinessGate() {
 }
 
-bool BusinessGate::passGate(Player player) {
-	float playerMoney = player.getMoney();
+bool BusinessGate::passGate(Player* player) {
+	float playerMoney = player->getMoney();
 	if (playerMoney < money) return false;
 
-	player.setMoney(playerMoney - money);
+	player->setMoney(playerMoney - money);
 	return true;
+}
+
+string BusinessGate::printGateInfo() {
+	stringstream ss;
+	ss << "Type: " << type
+		<< "\tGuard by: " << guardName
+		<< "\tCost: " << cost
+		<< "\tNumber: " << num
+		<< "\t" << Gate::printGateInfo();
+	return ss.str();
 }

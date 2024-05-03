@@ -9,3 +9,14 @@ Gate::Gate() {
 Gate::~Gate() {
 }
 
+bool Gate::passGate(Player* player) {
+	return true;
+}
+
+string Gate::printGateInfo() {
+	stringstream ss;
+	ss << "Money: " << money
+		<< "\tPower: " << power
+		<< "\tWisdom: " << wisdom;
+	return ss.str();
+}

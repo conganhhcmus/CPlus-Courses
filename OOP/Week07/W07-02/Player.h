@@ -14,7 +14,7 @@ private:
 
 public:
 	Player();
-	Player(string, float, float, float);
+	Player(string playerName, float money, float wisdom, float power);
 	~Player();
 	float getMoney();
 	float getPower();

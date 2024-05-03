@@ -6,5 +6,6 @@ public:
 	PowerGate();
 	PowerGate(float power);
 	~PowerGate();
-	bool passGate(Player player) override;
+	bool passGate(Player* player) override;
+	string printGateInfo() override;
 };

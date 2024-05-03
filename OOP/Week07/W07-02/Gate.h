@@ -14,5 +14,6 @@ protected:
 public:
 	Gate();
 	~Gate();
-	virtual bool passGate(Player player) = 0;
+	virtual bool passGate(Player* player);
+	virtual string printGateInfo();
 };
